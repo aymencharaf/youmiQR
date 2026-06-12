@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: youmi-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: youmi
+      POSTGRES_PASSWORD: youmi
+      POSTGRES_DB: youmi
+    ports:
+      - "5432:5432"
+    volumes:
+      - youmi_pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: youmi-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - youmi_redis_data:/data
+
+volumes:
+  youmi_pg_data:
+  youmi_redis_data:

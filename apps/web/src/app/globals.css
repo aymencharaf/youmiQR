@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #1d4ed8;
+  --brand-dark: #1e3a8a;
+  --accent: #38bdf8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f9ff;
+  color: #0f172a;
+}
+
+/* RTL niceties */
+[dir='rtl'] .ltr-num {
+  direction: ltr;
+  display: inline-block;
+}

@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Youmi",
+    "slug": "youmi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "youmi",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0E7C66"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true, "bundleIdentifier": "dz.youmi.app" },
+    "android": { "package": "dz.youmi.app" },
+    "extra": { "apiUrl": "http://10.0.2.2:4000/api" }
+  }
+}
